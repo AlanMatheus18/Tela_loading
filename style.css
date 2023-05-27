@@ -1,0 +1,66 @@
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: beige;
+}
+
+main {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.box1{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color:red ;
+    animation: rodar 1.5s linear infinite;
+}
+
+.box2{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color:rgb(243, 243, 247) ;
+    animation: rodar2 1.5s linear infinite;
+}
+
+@keyframes rodar {
+    0%{
+       left: 0;
+    }
+    50%{
+        transform: scale(1);
+        left: 120px;
+    }
+  
+    100%{
+        transform: scale(1);
+        left: 0px; 
+    }
+}
+
+@keyframes rodar2 {
+    0%{
+        right: 0;
+     }
+     50%{
+         transform: scale(1);
+         right: 120px;
+     }
+    
+     100%{
+         transform: scale(1);
+         right: 0px; 
+     }
+}
